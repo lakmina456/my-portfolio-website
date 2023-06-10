@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>My Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/nav.js"></script>
+    <script>
+            function validateForm() {
+              var name = document.forms["contactForm"]["name"].value;
+              var email = document.forms["contactForm"]["email"].value;
+              var phone = document.forms["contactForm"]["phone"].value;
+        
+              if (name == "") {
+                alert("Name must be filled out");
+                return false;
+              }
+        
+              var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+              if (email == "") {
+                alert("Email must be filled out");
+                return false;
+              } else if (!email.match(emailRegex)) {
+                alert("Invalid email address");
+                return false;
+              }
+        
+              var phoneRegex = /^\d{10}$/;
+              if (phone == "") {
+                alert("Phone number must be filled out");
+                return false;
+              } else if (!phone.match(phoneRegex)) {
+                alert("Invalid phone number");
+                return false;
+              }
+              return true;
+            }
+          </script>
+</head>
+
+<body>
+    
+    <nav id="navbar" class="black navbar navbar-expand-lg fixed-top">
+        <img src="./images/1.png" style="width: 70px; height: 70px;">
+        <a id="nav-logo" class="navbar-brand" href="index.html">isuru lakmina</a>
+
+       
+        <button class="navbar-toggler" id="nav-btn" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <span class="navbar-btn"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul id="nav-ul" class="navbar-nav">
+                <li class="nav-item navigation-list">
+                    <a class="nav-link nav-custom-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item navigation-list">
+                    <a class="nav-link nav-custom-link" href="#about-me">About</a>
+                </li>
+                <li class="nav-item navigation-list">
+                    <a class="nav-link nav-custom-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item navigation-list">
+                    <a class="nav-link nav-custom-link" href="#my-portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item navigation-list">
+                    <a class="nav-link nav-custom-link" href="#section-contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+ <main class="container-fluid main p-0">
+        <section class="container-fluid section-1">
+                
+            <div class="row section-1-inner">
+                
+                <div class="col section-1-inner-col">
+                    
+                    <div class="col section-1-inner-col">
+                             
+                        <div class="image-frame mx-auto my-1 section" >
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-me" class="container-fluid section-2 section">
+            <div class="row">
+                <div class="col text-center section">
+                    <div class="primary-heading ">
+                        I am a<span class="fw-bold primary-heading-bold">Freelancer</span>
+                    </div>
+                    <div class="paragraph mx-auto mt-2">
+                        Hello! My name is Isuru Lakmina, I'm creative and professional graphic designer who has experience for 8+ years. I currently studying in an university related IT.I have designed posters, media contents, banners for local companies .I have great motivation and passion about my work. I guarantee that provide my best service for you!
+                    </div>
+                         
+                    
+                      
+                </div>
+            </div>
+            
+        </section>
+   
+       
+
+
+        <section class=" container-fluid section-3 ">
+            <div class="row section-3-inner section">
+                <div class="col-lg-6 section-3-inner-col-left text-center">
+                    <div class="primary-heading section-3-heading text-lg-end">
+                        I Am <span class="fw-bold">Designer</span>
+                    </div>
+                    <div class="section-3-image-left text-lg-end">
+                        <img src="./img/Designer.png" class="img-fluid sec3-images sec3-img-left" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 section-3-inner-col-right text-center mt-5 mt-lg-0">
+                    <div class="section-3-image-right text-lg-start">
+                        <img src="./img/Designer2.jpg" class="img-fluid sec3-images sec3-img-right" alt="">
+                    </div>
+                    <div class="section-3-button-right text-lg-start">
+                    </div>
+                </div>
+            </div>
+            <div class="background-section-3"></div>
+        </section>
+        <div id="skills" class="col">
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+            <div class="container">
+                <h2>My Skills </h2>
+                <div class="skills">
+                    <div class="details">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="html-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>CSS</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="css-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Javascript</span>
+                        <span>72%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="js-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>C++</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="jQuery-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>C</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="js-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Python</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="js-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <div class="bold-line"></div>
+
+
+       
+        <section id="my-portfolio" class="container-fluid section-5">
+           
+            <div class="row">
+                <div class="col text-center">
+                    <div class="sec5-portfolio-head">
+                        My Portfolio
+                    </div>
+                </div>
+            </div>
+        </section>
+                
+                    <center><div class="slider_container">
+                            <section class="slider">
+                                <div class="slide one">
+                                    <img src="./img/slider1.jpg" alt="image1">
+                                </div>
+                                <div class="slide two">
+                                    <img src="./img/slider2.jpg" alt="image2">
+                                </div>
+                                <div class="slide three">
+                                    <img src="./img/slider3.jpg" alt="image3">
+                                </div>
+                            </section>
+                            <div class="slider_nav">
+                                <button class="prev_btn">&lt;</button>
+                                <button class="next_btn">&gt;</button>
+                            </div>
+                    </div></center>
+                   
+        <section>
+            <div class="row mt-4 mt-md-5 work-gallery-row">
+                <div class="masonry">
+                   
+                    <div class="grid">
+                        <img src="./img/1.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Isuru Lakmina</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 1</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="grid">
+                        <img src="./img/2.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Isuru Lakmina</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 2</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="grid">
+                        <img src="./img/3.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Isuru Lakmina</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 3</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="grid">
+                        <img src="./img/4.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Isuru Lakmina</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 4</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="grid">
+                        <img src="./images/work-6.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Isuru Lakmina</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 5</span>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="grid">
+                        <img src="./images/work-7.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Isuru Lakmina</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 6</span>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="grid">
+                        <img src="./images/work-8.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Isuru Lakmina</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 7</span>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="grid">
+                        <img src="./images/work-9.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Isuru Lakmina</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 8</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div></div>
+             </section>
+
+         <section>        
+            <div id="image-container" class="hidden-images">
+                <div class="row mt-0 mt-md-0 work-gallery-row">
+                <div class="masonry">
+                    <div class="grid" >
+                        <img src="./images/work-10.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Isuru Lakmina</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 9</span>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="grid">
+                        <img src="./images/work-11.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Isuru Lakmina</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 10</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="grid">
+                        <img src="./images/work-12.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Isuru Lakmina</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 11</span>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="grid">
+                        <img src="./images/work-13.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Isuru Lakmina</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                 
+                
+            </div>
+            </section>
+       
+       
+        <div class="row">
+                    <div class="section-5-button mt-4 mt-sm-5 text-center">
+                        <button id="toggle-button" class="sec5-btn text-uppercase fw-bold" onclick="toggleImages()">View More</button>
+                    </div>
+        </div>
+                
+       
+
+      
+        
+
+       
+        <section id="section-contact" class="container-fluid ">
+            <div class="row ">
+                <div class="col-12 text-center">
+                    <div class="contact-heading">
+                        Contact Me
+                    </div>
+                   
+                </div>
+            </div>
+           <div class="row card-row-1">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center custom-card">
+                        
+                        <div class="card-body">
+                            <div class="card-circle">
+                                <div class="card-circle-icon"><i class="fa fa-map-signs" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="card-heading">Address</div>
+                            <div class="card-para">No 500,Mahaedanda,Karandeniya</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center custom-card mt-5 mt-md-0">           
+                        <div class="card-body">
+                            <div class="card-circle">
+                                <div class="card-circle-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="card-heading">Contact Number</div>
+                            <div class="card-para"><a class="card-link" href="https://wa.me/+94771234567">+94771234567</div></a></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center custom-card mt-5 mt-lg-0">
+                        <div class="card-body">
+                            <div class="card-circle">
+                                <div class="card-circle-icon"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="card-heading">Email Address</div>
+                            <div class="card-para"><a class="card-link" href="mailto:email@example.com">email@gmail.com</div></a>
+                        </div>
+                    </div>
+                    
+                </div>      
+            </div>
+            
+            <div class="row">
+                <div class="col-12 text-center">
+                            <h1>Contact Form</h1>
+                            <form name="contactForm" onsubmit="return validateForm()">
+                              <label for="name">Name:</label>
+                              <input type="text" id="name" name="name">
+                              <br><br>
+                              <label for="email">Email:</label>
+                              <input type="text" id="email" name="email">
+                              <br><br>
+                              <label for="phone">Phone:</label>
+                              <input type="text" id="phone" name="phone">
+                              <br><br>
+                              <input type="submit" value="Submit">                           
+                            </form>
+                </div>
+            </div>
+           </div>
+            
+           </div>
+          
+           </div>
+           
+        </section>
+       
+
+        <section class="container-fluid section-7 section">
+            <div class="row section-7-inner mx-auto text-center">
+                <div class="col">
+                    <div class="section-7-text ">
+                        Stay in touch with me! Please follow me on social media.
+                    </div>
+                    <div class="section-7-icons">
+                        <a href="https://web.facebook.com/isuru.lakmina.20/" class="social-icons"><img src="./img/fb.jpg"style="width:100px;height:100px;"></a>
+                        <a href="https://twitter.com/lakmina37237112" class="social-icons"><img src="./img/tw.jpg"style="width:100px;height:100px;"></a>
+                        <a href="https://www.instagram.com/isurulakmina/?fbclid=IwAR0oK8_Bo5pViljIj-0aMxjyHDwbgRkh-DaCcNLK31f12WYRhCP_5CtdFxs" class="social-icons"><img src="./img/ins.jpg"style="width:100px;height:100px;"></a>
+                        <a href="https://www.linkedin.com/in/isuru-lakmina-0a655720a?fbclid=IwAR2BZN5XGm3XOqfcvLdA8Y14iNqogVoFWcy2J17NdCVLK862oPz-WpbdhPM" class="social-icons"><img src="./img/lin.jpg"style="width:100px;height:100px;"></a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <footer class="container-fluid footer">
+            <hr style="border-bottom: 1px solid #FFFFFF;">
+            <div class="row section-footer-inner">
+                <div class="col">
+                    <div class="footer-copyright text-center mt-2">
+                      Copyright 2023
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </main>
+           
+        
+</body>
+
+      
+</html>
